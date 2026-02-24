@@ -10,9 +10,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.monolithic.product.domain.dto.UserRequestDTO;
-import com.example.monolithic.product.domain.dto.UserResponseDTO;
 import com.example.monolithic.user.dao.UserRepository;
+import com.example.monolithic.user.domain.dto.UserRequestDTO;
+import com.example.monolithic.user.domain.dto.UserResponseDTO;
 import com.example.monolithic.user.domain.entity.UserEntity;
 import com.example.monolithic.user.provider.JwtProvider;
 

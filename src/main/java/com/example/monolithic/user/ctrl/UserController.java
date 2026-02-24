@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.monolithic.product.domain.dto.UserRequestDTO;
-import com.example.monolithic.product.domain.dto.UserResponseDTO;
+import com.example.monolithic.user.domain.dto.UserRequestDTO;
+import com.example.monolithic.user.domain.dto.UserResponseDTO;
 import com.example.monolithic.user.service.UserService;
 
 import lombok.RequiredArgsConstructor;

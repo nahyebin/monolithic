@@ -37,6 +37,8 @@ dependencies {
 	// spring security
 	implementation 'org.springframework.boot:spring-boot-starter-security'
 	
+	// 날짜타입에 관련된 이슈발생시 사용하면 좋음
+	// implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
 	
 	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 	implementation 'org.springframework.boot:spring-boot-starter-webmvc'

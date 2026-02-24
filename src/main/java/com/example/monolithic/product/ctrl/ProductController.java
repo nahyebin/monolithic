@@ -3,9 +3,9 @@ package com.example.monolithic.product.ctrl;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.monolithic.product.domain.dto.ProductRequestDTO;
+import com.example.monolithic.product.domain.dto.ProductResponseDTO;
 import com.example.monolithic.product.service.ProductService;
-import com.example.monolithic.user.domain.dto.ProductRequestDTO;
-import com.example.monolithic.user.domain.dto.ProductResponseDTO;
 
 import lombok.RequiredArgsConstructor;
 

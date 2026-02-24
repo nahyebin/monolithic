@@ -1,4 +1,4 @@
-package com.example.monolithic.product.domain.dto;
+package com.example.monolithic.user.domain.dto;
 
 import com.example.monolithic.user.domain.entity.UserEntity;
 
