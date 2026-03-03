@@ -1,0 +1,31 @@
+# aws nlb -> ingress controller(pod) -> ingress -> service -> pod
+
+# 버전
+apiVersion: networking.k8s.io/v1
+
+# 자원의 종류(Pod, Service, ReplicaSet, Deployment)
+kind: Ingress
+
+metadata:
+  name: order-ingress
+  namespace: lgcns
+  annotations:
+    #kubernetes.io/ingress.class: nginx
+    # nginx.ingress.kubernetes.io/rewrite-target: /$1
+  
+spec:
+  ingressClassName: nginx
+  rules:
+    # 레코드로 등록한 도메인 이름
+  - host: server.hyebin.shop
+    http:
+      paths:
+        # http://server.hyebin.shop/
+      - path: /
+        pathType: Prefix
+        backend: 
+          service:
+            name: order-service
+            port:
+              number: 80
+
