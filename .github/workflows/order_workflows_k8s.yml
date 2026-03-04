@@ -22,11 +22,17 @@ jobs:
         uses: azure/setup-kubectl@v3
 
       - name: aws configure
-        uses: aws-actions/comfigure-aws-credential@v1
+        uses: aws-actions/configure-aws-credential@v1
         with:
           aws-access-key-id: ${{ secrets.AWS_KEY}}
           aws-secret-access-key: ${{ secrets.AWS_SECRET}}
           aws-region: ap-south-1
+
+      - name: aws eks cluster update
+        run: aws eks update-kubeconfig --region ap-south-1 --name lgcns-hyebin-cluster
+
+      - name: aws ecr login
+        uses: aws-actions/amazon-ecr-login@v1
 
   
 
